@@ -1,0 +1,43 @@
+input {
+    border-radius: 5px;
+        background-color: #FFFAFA;
+        color: #06224a;
+        width: 500px;
+        margin: 5px;
+    }
+    /*
+    button:focus {
+        outline: none;
+    }
+    */
+button {
+        margin-left: 10px;
+        background-color: #06224a;
+        color: white;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    
+button:hover {
+        background-color: #010d1f;
+        transition: 0.3s;
+    }
+body{font-family:Calibri, Tahoma, Arial}
+            .TabControl{ width:100%; overflow:showed;}
+            .TabControl #header{ width:100%;  overflow:hidden; cursor:hand}
+            .TabControl #content{ width:100%; border: solid 1px;overflow:hidden; height:100%; }
+            .TabControl .abas{display:inline;}
+            .TabControl .abas li{float:left; list-style: none}
+            .aba{width:120px; height:30px; border:solid 1px; border-radius:5px 5px 0 0; text-align:center; padding-top:5px; background:#4682B4;}
+            .ativa{width:120px; height:30px; border:solid 1 px; border-radius:5px 5px 0 0; text-align:center; padding-top:5px; background:#27408B;}
+            .ativa span, .selected span{color:#fff}
+            .TabControl #content{background:#27408B}
+            .TabControl .conteudo{width:100%; background:#B0C4DE; display:none; height:100%;color:#fff}
+            .selected{width:120px; height:30px; border:solid 1 px; border-radius:5px 5px 0 0; text-align:center; padding-top:5px; background:#B0C4DE}
+            .titulo {text-align:center; padding-top:5px; font-size:25px;}
+            .textarea {margin-left: 10px; border-radius: 5px;
+            }
+.topicos.submit {
+color: black;
+background-color: #010d1f;
+}

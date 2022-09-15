@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Padronização texto de chamados</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Infra"/>
+<link rel="stylesheet" href="abas.css">
+ <!--<script src="JavaScript" href="abas.js"></script> -->
+<link rel="stylesheet" href="./abas.js">
+		<!--.topicos {margin-left: 10px;}
+        
+         Configuração do input 
+        
+        input, button {
+            font-size: 14px;
+            border-radius: 5px;
+            border: none;
+            padding: 3px;
+        }-->
+
+	<!--
+
+	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$("#content div:nth-child(1)").show();
+			$(".abas li:first div").addClass("selected");
+			$(".aba").click(function(){
+				$(".aba").removeClass("selected");
+				$(this).addClass("selected");
+				var indice = $(this).parent().index();
+				indice++;
+				$("#content div").hide();
+				$("#content div:nth-child("+indice+")").show();
+			});
+
+			$(".aba").hover(
+				function(){$(this).addClass("ativa")},
+				function(){$(this).removeClass("ativa")}
+			);
+		
+		});
+	</script>
+    -->
+</head>
+<body>
+	<div class="TabControl">
+		<div id="header">
+			<ul class="abas">
+				<li>
+					<div class="aba">
+						<span>Performance</span>
+					</div>
+				</li>
+				<li>
+					<div class="aba">
+						<span>Produto</span>
+					</div>
+				</li>
+				<li>
+					<div class="aba">
+						<span>Monitoramento</span>
+					</div>
+				</li>
+				<li>	
+					<div class="aba">
+						<span>Serviços/TI</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Conteúdo da Aba Performance -->
+		
+		<div id="content">
+			<div class="conteudo"> 
+            
+				<span class="topicos">Atendimento realizado por: <input type="text" id="txtAtendProd"></input></span>
+			
+				<p class="titulo">Informações Técnicas Server</p>
+            		
+				<span class="topicos" >
+                    SO: <input type="text" id="txtSO"></input></br>
+					Versão SQL:  <input type:"text" id: "txtVSQL"></input></br>
+					RAM:  <input type:"text" id: "txtRam"></input></br>
+					CPU:   <input type:"text" id: "txtCPU"></input></br>
+				</span>
+				<p class="titulo">Dados da situação/problema</p>
+			
+				<span class ="topicos">	
+					Rotinas com lentidão:  <input type="text" id="txtRotinasLentidao"></input></br>
+					Empresas:  <input type="text" id="txtEmpresas"></input></br>
+					Máquinas:  <input type="text" id="txtMaquinas"></input></br>
+					Acesso TS:  <input type="text" id="txtAcessoTS"></input></br>
+					Qtd pessoas que usam o NG:  <input type="text" id="txtQtdPessoas"></input></br>
+					Maior banco da NG:  <input type="text" id="txtMaiorBanco"></input></br>
+					Velocidade HD (Benchmark):  <input type="text" id="txtVelocidadeHD"></input></br>
+					Início do problema: <input type="text" id="txtInicioProblema"></input></br>
+				</span>
+				
+				<p class="titulo">Análise Técnica</p>
+				
+				<span class ="topicos">	
+					Consumo CPU: <input type="text" id="txtConsumoCPU"></input></br>
+					Consumo Memória Ram: <input type="text" id="txtConsumoRAM"></input></br>
+					Espaço reservado para a memória no SQL: <input type="text" id="txtMemoriaSQL"></input></br>
+					Velocidade Internet: <input type="text" id="txtVelocidadeInternet"></input></br>
+				</span>
+				
+				<p class="titulo">Ações Técnicas</p>
+				
+				<textarea id="txtareaAcoesTecnicas" rows= "10" cols= "100" class="textarea"></textarea>
+				
+				<p class="titulo">Conclusão</p>
+				
+				<textarea id="txtareaConclusao" rows= "10" cols= "100" class="textarea"></textarea>
+				
+				<p class="titulo">Orientação</p>
+				
+				<textarea id="txtareaOrientacao" rows= "10" cols= "100" class="textarea"></textarea>
+
+				<input type="button" onclick="alert('Gerado com sucesso!')" value="Gerar TXT ">
+            </div>
+			
+			<!-- Conteúdo da Aba Produto -->
+			
+			<div class="conteudo"> 
+
+				<span class="topicos">Atendimento realizado com: <input type="text" id="txtAtendProd"></input></span>
+				
+				<p class="titulo">Dados da situação/problema</p>
+				
+				Módulo:  <input type="text" id="txtModulo"></input></br>
+				Rotina:  <input type="text" id="txtRotina"></input></br>
+				Empresas:  <input type="text" id="txtEmpresas"></input></br>
+				Máquinas:  <input type="text" id="txtMaquinas"></input></br>
+				Erro:  <input type="text" id="txtErro"></input></br>
+				Backup:  <input type="text" id="txtBackup"></input></br>
+
+				<p class="titulo">Ações Técnicas</p>
+				
+				<textarea id="txtareaAcoesTecnicas" rows= "10" cols= "100" class="textarea"></textarea>
+				
+				<p class="titulo">Conclusão</p>
+				
+				<textarea id="txtareaConclusao" rows= "10" cols= "100" class="textarea"></textarea>
+				
+				<p class="titulo">Orientação</p>
+				
+				<textarea id="txtareaOrientacao" rows= "10" cols= "100" class="textarea"></textarea>
+
+			</div>
+			
+			<!-- Conteúdo da Aba Monitoramento -->
+			
+			<div class="conteudo"> 
+				
+				<span class="topicos">Atendimento realizado com: <input type="text" id="txtAtendProd"></input></span>
+				
+				<p class="titulo">Dados da situação/problema</p>
+				
+				Módulo:  <input type="text" id="txtModulo"></input></br>
+				Rotina:  <input type="text" id="txtRotina"></input></br>
+				Empresas:  <input type="text" id="txtEmpresas"></input></br>
+				Máquinas:  <input type="text" id="txtMaquinas"></input></br>
+				Erro:  <input type="text" id="txtErro"></input></br>
+				Backup:  <input type="text" id="txtBackup"></input></br>		
+
+				<p class="titulo">Ações Técnicas</p>
+				
+				<textarea id="txtareaAcoesTecnicas" rows= "10" cols= "100" class="textarea"></textarea>
+				
+				<p class="titulo">Conclusão</p>
+				
+				<textarea id="txtareaConclusao" rows= "10" cols= "100" class="textarea"></textarea>
+				
+				<p class="titulo">Orientação</p>
+				
+				<textarea id="txtareaOrientacao" rows= "10" cols= "100" class="textarea"></textarea>
+				
+				<button onclick="myFunction()"> Gerar TXT </button>
+				<p id="gerarTxt"></p>
+				
+				<script>
+				function myFunction() {
+					document.getElementById("gerarTxt").innerHTML = "TXT";
+				}
+				</script>
+			</div>
+			/*
+			<!-- Conteúdo da Aba Serviços/TI --> */
+			
+			<div class="conteudo"> Conteúdo da aba 4 </div>
+		</div>
+	</div>
+</body>
+</html>
