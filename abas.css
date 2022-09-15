@@ -25,8 +25,8 @@ button:hover {
 body{font-family:Calibri, Tahoma, Arial}
             .TabControl{ width:100%; overflow:showed;}
             .TabControl #header{ width:100%;  overflow:hidden; cursor:hand}
-            .TabControl #content{ width:100%; border: solid 1px;overflow:hidden; height:100%; }
-            .TabControl .abas{display:inline;}
+            .TabControl .content{ width:100%; border: solid 1px;overflow:hidden; height:100%; margin-top: 5;}
+            .TabControl .abas{display:contents;}
             .TabControl .abas li{float:left; list-style: none}
             .aba{width:120px; height:30px; border:solid 1px; border-radius:5px 5px 0 0; text-align:center; padding-top:5px; background:#4682B4;}
             .ativa{width:120px; height:30px; border:solid 1 px; border-radius:5px 5px 0 0; text-align:center; padding-top:5px; background:#27408B;}
@@ -37,7 +37,9 @@ body{font-family:Calibri, Tahoma, Arial}
             .titulo {text-align:center; padding-top:5px; font-size:25px;}
             .textarea {margin-left: 10px; border-radius: 5px;
             }
+   /*         
 .topicos.submit {
 color: black;
 background-color: #010d1f;
 }
+*/
